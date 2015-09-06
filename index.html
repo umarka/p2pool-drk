@@ -1,0 +1,216 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/github-dark.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>P2pool-drk</title>
+  <meta name="description" content="p2pool for darkcoin, http://drk.poolhash.org/">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">P2pool-drk</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">p2pool for darkcoin, http://drk.poolhash.org/</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/umarka/p2pool-drk/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/umarka/p2pool-drk/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/umarka/p2pool-drk" class="code">View P2pool-drk on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements:</h2>
+
+<p>Generic:</p>
+
+<ul>
+<li>Vertcoin &gt;=0.8.5</li>
+<li>Python &gt;=2.6</li>
+<li>Twisted &gt;=10.0.0</li>
+<li>python-argparse (for Python =2.6)</li>
+</ul>
+
+<p>Linux:</p>
+
+<ul>
+<li>sudo apt-get install python-zope.interface python-twisted python-twisted-web</li>
+<li>sudo apt-get install python-argparse # if on Python 2.6</li>
+</ul>
+
+<p>Windows:</p>
+
+<ul>
+<li>Install Python 2.7: <a href="http://www.python.org/getit/">http://www.python.org/getit/</a>
+</li>
+<li>Install Twisted: <a href="http://twistedmatrix.com/trac/wiki/Downloads">http://twistedmatrix.com/trac/wiki/Downloads</a>
+</li>
+<li>Install Zope.Interface: <a href="http://pypi.python.org/pypi/zope.interface/3.8.0">http://pypi.python.org/pypi/zope.interface/3.8.0</a>
+</li>
+<li>Install python win32 api: <a href="http://sourceforge.net/projects/pywin32/files/pywin32/Build%20218/">http://sourceforge.net/projects/pywin32/files/pywin32/Build%20218/</a>
+</li>
+<li>Install python win32 api wmi wrapper: <a href="https://pypi.python.org/pypi/WMI/#downloads">https://pypi.python.org/pypi/WMI/#downloads</a>
+</li>
+<li>Unzip the files into C:\Python27\Lib\site-packages</li>
+</ul>
+
+<h2>
+<a id="install-module" class="anchor" href="#install-module" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install module:</h2>
+
+<ul>
+<li><p>apt-get install libboost1.48-all-dev python-dev</p></li>
+<li><p>git clone <a href="https://github.com/chaeplin/SUBSIDY_FUNC.git">https://github.com/chaeplin/SUBSIDY_FUNC.git</a></p></li>
+<li><p>git clone <a href="https://github.com/evan82/xcoin-hash.git">https://github.com/evan82/xcoin-hash.git</a></p></li>
+<li><p>cd SUBSIDY_FUNC/darkcoin-subsidy-python</p></li>
+<li><p>python setup.py install</p></li>
+<li><p>cd xcoin-hash</p></li>
+<li>python setup.py install</li>
+</ul>
+
+<h2>
+<a id="running-p2pool" class="anchor" href="#running-p2pool" aria-hidden="true"><span class="octicon octicon-link"></span></a>Running P2Pool:</h2>
+
+<p>To use P2Pool, you must be running your own local bitcoind. For standard
+configurations, using P2Pool should be as simple as:</p>
+
+<pre><code>python run_p2pool.py
+</code></pre>
+
+<p>Then run your miner program, connecting to 127.0.0.1 on port 9332 with any
+username and password.</p>
+
+<p>If you are behind a NAT, you should enable TCP port forwarding on your
+router. Forward port 9333 to the host running P2Pool.</p>
+
+<p>Run for additional options.</p>
+
+<pre><code>python run_p2pool.py --help
+</code></pre>
+
+<h2>
+<a id="donations-towards-further-development" class="anchor" href="#donations-towards-further-development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Donations towards further development:</h2>
+
+<pre><code>1HNeqi3pJRNvXybNX4FKzZgYJsdTSqJTbk
+</code></pre>
+
+<h2>
+<a id="official-wiki-" class="anchor" href="#official-wiki-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Official wiki :</h2>
+
+<p><a href="https://en.bitcoin.it/wiki/P2Pool">https://en.bitcoin.it/wiki/P2Pool</a></p>
+
+<h2>
+<a id="alternate-web-front-end-" class="anchor" href="#alternate-web-front-end-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alternate web front end :</h2>
+
+<ul>
+<li><a href="https://github.com/hardcpp/P2PoolExtendedFrontEnd">https://github.com/hardcpp/P2PoolExtendedFrontEnd</a></li>
+</ul>
+
+<h1>
+<a id="notes-for-vertcoin" class="anchor" href="#notes-for-vertcoin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes for Vertcoin:</h1>
+
+<h2>
+<a id="requirements-1" class="anchor" href="#requirements-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements:</h2>
+
+<p>In order to run P2Pool with the Vertcoin network, you would need to build and install the
+vtc_scrypt module that includes the scrypt proof of work code that Vertcoin uses for hashes.</p>
+
+<p>Linux:</p>
+
+<pre><code>cd py_modules/vertcoin_scrypt
+sudo python setup.py install
+</code></pre>
+
+<p>Windows (mingw):</p>
+
+<ul>
+<li>Install MinGW: <a href="http://www.mingw.org/wiki/Getting_Started">http://www.mingw.org/wiki/Getting_Started</a>
+</li>
+<li>Install Python 2.7: <a href="http://www.python.org/getit/">http://www.python.org/getit/</a>
+</li>
+</ul>
+
+<p>In bash type this:</p>
+
+<pre><code>cd py_modules\vertcoin_scrypt
+C:\Python27\python.exe setup.py build --compile=mingw32 install
+</code></pre>
+
+<p>Windows (microsoft visual c++)</p>
+
+<ul>
+<li>Open visual studio console</li>
+</ul>
+
+<p>In bash type this:</p>
+
+<pre><code>SET VS90COMNTOOLS=%VS110COMNTOOLS%             # For visual c++ 2012
+SET VS90COMNTOOLS=%VS100COMNTOOLS%             # For visual c++ 2010
+cd py_modules\vertcoin_scrypt
+C:\Python27\python.exe setup.py build --compile=mingw32 install
+</code></pre>
+
+<p>If you run into an error with unrecognized command line option '-mno-cygwin', see this:
+<a href="http://stackoverflow.com/questions/6034390/compiling-with-cython-and-mingw-produces-gcc-error-unrecognized-command-line-o">http://stackoverflow.com/questions/6034390/compiling-with-cython-and-mingw-produces-gcc-error-unrecognized-command-line-o</a></p>
+
+<h2>
+<a id="running-p2pool-1" class="anchor" href="#running-p2pool-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Running P2Pool:</h2>
+
+<p>Run P2Pool with the "--net vertcoin" option.
+Run your miner program, connecting to 127.0.0.1 on port 9171.</p>
+
+<h1>
+<a id="notes-for-cachecoin" class="anchor" href="#notes-for-cachecoin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes for Cachecoin:</h1>
+
+<p>This is currently under heavy development and still experimental. For the
+current latest stable implementation, please use <a href="https://github.com/Sykh/p2pool-cache">https://github.com/Sykh/p2pool-cache</a></p>
+
+<h2>
+<a id="sponsors" class="anchor" href="#sponsors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sponsors:</h2>
+
+<p>Thanks to:</p>
+
+<ul>
+<li>The Bitcoin Foundation for its generous support of P2Pool</li>
+<li>The Litecoin Project for its generous donations to P2Pool</li>
+<li>The Vertcoin Community for its great contribution to P2Pool</li>
+</ul>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/umarka" class="avatar"><img src="https://avatars1.githubusercontent.com/u/14143985?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/umarka">umarka</a> maintains <a href="https://github.com/umarka/p2pool-drk">P2pool-drk</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/umarka/p2pool-drk/tarball/master" class="tar">tar</a><a href="https://github.com/umarka/p2pool-drk/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
